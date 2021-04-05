@@ -13,10 +13,10 @@ import (
 	"strings"
 	"sync"
 
-	"google.golang.org/protobuf/reflect/protodesc"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
-	"google.golang.org/protobuf/runtime/protoimpl"
+	"github.com/ryanleesmith/protobuf-go/reflect/protodesc"
+	"github.com/ryanleesmith/protobuf-go/reflect/protoreflect"
+	"github.com/ryanleesmith/protobuf-go/reflect/protoregistry"
+	"github.com/ryanleesmith/protobuf-go/runtime/protoimpl"
 )
 
 // filePath is the path to the proto source file.

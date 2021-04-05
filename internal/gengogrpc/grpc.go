@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"strings"
 
-	"google.golang.org/protobuf/compiler/protogen"
+	"github.com/ryanleesmith/protobuf-go/compiler/protogen"
 
-	"google.golang.org/protobuf/types/descriptorpb"
+	"github.com/ryanleesmith/protobuf-go/types/descriptorpb"
 )
 
 const (

@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
-	"google.golang.org/protobuf/reflect/protoreflect"
-	"google.golang.org/protobuf/reflect/protoregistry"
+	"github.com/ryanleesmith/protobuf-go/reflect/protoreflect"
+	"github.com/ryanleesmith/protobuf-go/reflect/protoregistry"
+	"github.com/ryanleesmith/protobuf/proto"
 
-	anypb "github.com/golang/protobuf/ptypes/any"
+	anypb "github.com/ryanleesmith/protobuf/ptypes/any"
 )
 
 const urlPrefix = "type.googleapis.com/"

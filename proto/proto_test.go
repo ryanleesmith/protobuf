@@ -19,12 +19,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/proto"
-	"google.golang.org/protobuf/testing/protopack"
+	"github.com/ryanleesmith/protobuf-go/testing/protopack"
+	"github.com/ryanleesmith/protobuf/proto"
 
-	pb2 "github.com/golang/protobuf/internal/testprotos/proto2_proto"
-	pb3 "github.com/golang/protobuf/internal/testprotos/proto3_proto"
-	tspb "github.com/golang/protobuf/ptypes/timestamp"
+	pb2 "github.com/ryanleesmith/protobuf/internal/testprotos/proto2_proto"
+	pb3 "github.com/ryanleesmith/protobuf/internal/testprotos/proto3_proto"
+	tspb "github.com/ryanleesmith/protobuf/ptypes/timestamp"
 )
 
 func initGoTestField() *pb2.GoTestField {
@@ -2056,7 +2056,7 @@ func TestOneofNilBytes(t *testing.T) {
 }
 
 func TestInefficientPackedBool(t *testing.T) {
-	// https://github.com/golang/protobuf/issues/76
+	// https://github.com/ryanleesmith/protobuf/issues/76
 	inp := protopack.Message{
 		protopack.Tag{2, protopack.BytesType}, protopack.Bytes("\xb90"),
 	}.Marshal()

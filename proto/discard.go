@@ -5,7 +5,7 @@
 package proto
 
 import (
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/ryanleesmith/protobuf-go/reflect/protoreflect"
 )
 
 // DiscardUnknown recursively discards all unknown fields from this message

@@ -7,11 +7,11 @@ package proto_test
 import (
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	"google.golang.org/protobuf/testing/protopack"
+	"github.com/ryanleesmith/protobuf-go/testing/protopack"
+	"github.com/ryanleesmith/protobuf/proto"
 
-	pb2 "github.com/golang/protobuf/internal/testprotos/proto2_proto"
-	pb3 "github.com/golang/protobuf/internal/testprotos/proto3_proto"
+	pb2 "github.com/ryanleesmith/protobuf/internal/testprotos/proto2_proto"
+	pb3 "github.com/ryanleesmith/protobuf/internal/testprotos/proto3_proto"
 )
 
 var rawFields = protopack.Message{

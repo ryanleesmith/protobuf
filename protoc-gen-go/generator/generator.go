@@ -7,7 +7,7 @@
 // This package is excluded from the Go protocol buffer compatibility guarantee
 // and may be deleted at some point in the future.
 //
-// Deprecated: Use the "google.golang.org/protobuf/compiler/protogen" package
+// Deprecated: Use the "github.com/ryanleesmith/protobuf-go/compiler/protogen" package
 // instead to write protoc plugins in Go.
 package generator
 
@@ -32,16 +32,16 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/protoc-gen-go/generator/internal/remap"
+	"github.com/ryanleesmith/protobuf/proto"
+	"github.com/ryanleesmith/protobuf/protoc-gen-go/generator/internal/remap"
 
-	"github.com/golang/protobuf/protoc-gen-go/descriptor"
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
+	"github.com/ryanleesmith/protobuf/protoc-gen-go/descriptor"
+	plugin "github.com/ryanleesmith/protobuf/protoc-gen-go/plugin"
 )
 
 func init() {
 	fmt.Fprint(os.Stderr,
-		"WARNING: Package \"github.com/golang/protobuf/protoc-gen-go/generator\" is deprecated.\n"+
+		"WARNING: Package \"github.com/ryanleesmith/protobuf/protoc-gen-go/generator\" is deprecated.\n"+
 			"\tA future release of golang/protobuf will delete this package,\n"+
 			"\twhich has long been excluded from the compatibility promise.\n\n")
 }
@@ -1300,7 +1300,7 @@ func (g *Generator) generateImports() {
 	g.P("import (")
 	g.P(g.Pkg["fmt"] + ` "fmt"`)
 	g.P(g.Pkg["math"] + ` "math"`)
-	g.P(g.Pkg["proto"]+" ", GoImportPath(g.ImportPrefix)+"github.com/golang/protobuf/proto")
+	g.P(g.Pkg["proto"]+" ", GoImportPath(g.ImportPrefix)+"github.com/ryanleesmith/protobuf/proto")
 	for importPath, packageName := range imports {
 		g.P(packageName, " ", GoImportPath(g.ImportPrefix)+importPath)
 	}

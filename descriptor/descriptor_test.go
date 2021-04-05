@@ -8,9 +8,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/protobuf/reflect/protoreflect"
+	"github.com/ryanleesmith/protobuf-go/reflect/protoreflect"
 
-	descpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
+	descpb "github.com/ryanleesmith/protobuf/protoc-gen-go/descriptor"
 )
 
 func TestEnumDescriptor(t *testing.T) {
