@@ -5,5 +5,5 @@ go 1.9
 
 require (
 	github.com/google/go-cmp v0.5.5
-	google.golang.org/protobuf v1.26.0
+	github.com/ryanleesmith/protobuf-go v1.27.0
 )
